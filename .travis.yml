@@ -4,4 +4,5 @@ scala:
   - 2.11.8
 
 script:
+  - sh "$TRAVIS_BUILD_DIR/.travis.credentials.sh"
   - sbt clean compile package publish
