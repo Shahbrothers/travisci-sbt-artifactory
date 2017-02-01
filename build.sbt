@@ -14,7 +14,7 @@ publishTo := Some("Artifactory Realm" at "https://gcartifactory-us.jfrog.info/ar
   password <- Option(System.getenv().get("ARTIFACTORY_PASSWORD"))
 } yield 
   credentials += Credentials(
-                   "Artifactory", 
+                   "Artifactory Realm", 
                    "gcartifactory-us.jfrog.info", 
                    username, 
                    password)
