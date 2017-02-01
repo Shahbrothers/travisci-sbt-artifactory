@@ -6,9 +6,9 @@ lazy val root = (project in file(".")).
   )
 
 resolvers += 
-"Artifactory" at "http://localhost:8081/artifactory/sbt-dev/"
+"Artifactory" at "https://gcartifactory-us.jfrog.info/artifactory/sbt/"
 
-publishTo := Some("Artifactory Realm" at "http://localhost:8081/artifactory/sbt-dev;build.timestamp=" + new java.util.Date().getTime)
+publishTo := Some("Artifactory Realm" at "https://gcartifactory-us.jfrog.info/artifactory/sbt-dev;build.timestamp=" + new java.util.Date().getTime)
 credentials += Credentials("Artifactory Realm", "localhost", "admin", "APcXriD77ZygR9Nzv3UUuLnwJ7")
 
   libraryDependencies += "org.apache.derby" % "derby" % "10.4.1.3"
