@@ -9,5 +9,7 @@ resolvers +=
 "Artifactory" at "https://gcartifactory-us.jfrog.info/artifactory/sbt/"
 
 publishTo := Some("Artifactory Realm" at "https://gcartifactory-us.jfrog.info/artifactory/sbt-dev;build.timestamp=" + new java.util.Date().getTime)
-credentials += Credentials("Artifactory Realm", "localhost", $ARTIFACTORY_USERNAME, $ARTIFACTORY_PASSWORD)
+
+credentials += Credentials(new File("credentials.properties"))
+
 libraryDependencies += "org.apache.derby" % "derby" % "10.4.1.3"
