@@ -3,7 +3,7 @@
 
 cat <<EOF > credentials.properties
 realm=Artifactory Realm
-host=jfrog
+host=gcartifactory-us.jfrog.info
 user=$ARTIFACTORY_USERNAME
 password=$ARTIFACTORY_PASSWORD
 EOF
