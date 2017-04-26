@@ -1,11 +1,11 @@
-[![Build Status](https://travis-ci.org/jainishshah17/travisci-sbt-artifactory.svg?branch=master)](https://travis-ci.org/jainishshah17/travisci-sbt-artifactory)
+[![Build Status](https://travis-ci.org/Shahbrothers/travisci-sbt-artifactory.svg?branch=master)](https://travis-ci.org/Shahbrothers/travisci-sbt-artifactory)
 
 
 ## Artifactory Integration with Travis-CI
 
-`To make this integration  work you will need to have running Artifactory-pro/Artifactory SAAS/Artifactory Enterprise which is acccessible form outside.`
+`To make this integration  work you will need to have running Artifactory-pro/Artifactory SAAS.`
 
-####SBT Example
+#### SBT Example
 This is a sample project that resolve a dependency from Artifactory and deploys the build artifacts to Artifactory.
 
 Step 1:
